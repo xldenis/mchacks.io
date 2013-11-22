@@ -1,9 +1,3 @@
-require 'haml'
-require 'stasis'
-
-
-
-builder = Rack::Builder.new do 
 
 use Rack::Static, 
 :urls => Dir.glob("public/*").map { |fn| fn.gsub(/public/, '')}, 
@@ -19,6 +13,4 @@ use Rack::Static,
 
 run lambda{ |env| [ 404, { 'Content-Type'  => 'text/html' }, ['404 - page not found'] ] }
 
-end
 
-Rack::Handler::Thin.run builder, :Port => 9292
