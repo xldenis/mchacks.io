@@ -1,0 +1,48 @@
+//TODO: RESET
+//TODO: MOCKUP
+//TODO: BUILD ATOMS
+
+body{
+  background: rgb(0,43,54);
+  font-family: Menlo,Courier New;
+  font-size: 16px;
+  color: #93a1a1;
+}
+.hash:before {
+  content: "{";
+}
+.hash {
+  width: 800px;
+  margin: auto;
+  font-size: 2rem;
+}
+.hash:after {
+  content: "}";
+}
+p {
+  margin-left: 15px;
+  display: inline-block;
+  color: #2aa198;
+}
+p:before {
+  content: "\"";
+  color: #93a1a1;
+}
+p:after {
+  content: "\",";
+  color: #93a1a1;
+}
+p.key:before {
+  content: "\"";
+  color: #93a1a1;
+}
+p.key{
+  display: inline-block;
+}
+p.key:after {
+  content: "\" :";
+  color: #93a1a1;
+}
+span.pair {
+  display:block;
+}
