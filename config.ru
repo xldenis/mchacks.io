@@ -21,4 +21,4 @@ run lambda{ |env| [ 404, { 'Content-Type'  => 'text/html' }, ['404 - page not fo
 
 end
 
-Rack::Handler::Thin.run builder
+Rack::Handler::Thin.run builder, :Port => 9292
