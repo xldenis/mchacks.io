@@ -1,20 +1,22 @@
-GIT
-  remote: https://github.com/winton/stasis
-  revision: 842b44afbd843e01c782b9d0839e41e1c33845d8
+GEM
+  remote: https://rubygems.org/
   specs:
+    daemons (1.1.9)
+    directory_watcher (1.4.1)
+    eventmachine (1.0.3)
+    haml (4.0.4)
+      tilt
+    rack (1.5.2)
+    sass (3.2.12)
+    slop (3.3.2)
     stasis (0.2.0)
       directory_watcher (= 1.4.1)
       slop (= 3.3.2)
       tilt (= 1.3.3)
-
-GEM
-  remote: https://rubygems.org/
-  specs:
-    directory_watcher (1.4.1)
-    haml (4.0.4)
-      tilt
-    sass (3.2.12)
-    slop (3.3.2)
+    thin (1.6.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
     tilt (1.3.3)
 
 PLATFORMS
@@ -22,5 +24,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  rack
   sass
-  stasis!
+  stasis
+  thin

@@ -1,0 +1,56 @@
+
+.hash:before {
+  content: "{";
+}
+.hash {
+  font-family: Menlo,Courier New;
+  font-size: 16px;
+  color: #93a1a1;
+  width: 800px;
+  margin: auto;
+  font-size: 2rem;
+
+  p {
+    margin: 1em 0 1em 0;
+    display: inline-block;
+    color: #2aa198;
+
+  }
+  p:before {
+    content: "\"";
+    color: #93a1a1;
+  }
+  p:after {
+    content: "\"";
+    color: #93a1a1;
+  }
+
+  p.key:before {
+    content: "\"";
+    color: #93a1a1;
+  }
+  p.key{
+    display: inline-block;
+  }
+  p.key:after {
+    content: "\" :";
+    color: #93a1a1;
+  }
+  p + p {
+    text-indent: 0;
+  }
+
+  span.pair {
+    display:block;
+    text-indent: 1em;
+  }
+  span.pair:after{
+    content: ",";
+  }
+  span.pair:last-child:after {
+    content: "";
+  }
+
+}  .hash:after {
+  content: "}";
+}

@@ -1,0 +1,40 @@
+.hash:before {
+  content: "{"; }
+
+.hash {
+  font-family: Menlo,Courier New;
+  font-size: 16px;
+  color: #93a1a1;
+  width: 800px;
+  margin: auto;
+  font-size: 2rem; }
+  .hash p {
+    margin: 1em 0 1em 0;
+    display: inline-block;
+    color: #2aa198; }
+  .hash p:before {
+    content: "\"";
+    color: #93a1a1; }
+  .hash p:after {
+    content: "\"";
+    color: #93a1a1; }
+  .hash p.key:before {
+    content: "\"";
+    color: #93a1a1; }
+  .hash p.key {
+    display: inline-block; }
+  .hash p.key:after {
+    content: "\" :";
+    color: #93a1a1; }
+  .hash p + p {
+    text-indent: 0; }
+  .hash span.pair {
+    display: block;
+    text-indent: 1em; }
+  .hash span.pair:after {
+    content: ","; }
+  .hash span.pair:last-child:after {
+    content: ""; }
+
+.hash:after {
+  content: "}"; }

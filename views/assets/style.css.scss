@@ -1,37 +1,40 @@
 @import "normalize";
 @import "typeplate.css";
 @import "solarized";
+@import "json";
+
 body{
   width:100%;
   margin:0;
 }
 
-header{
+.slide:nth-child(odd){
+//  @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03);
+  background: white;
+  color: black;
+}
+.slide
+{
+//  @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
+  height: 100%;
   width: 100%;
+
+  overflow:auto;
+
   background: $red;
-  padding: 80px;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin: 50px 0 50px 0;
   color: white;
-  font-weight: 700;
+
+  article {
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+  }
 }
 
-section{
-  width:70%;
-  margin: auto;
-}
-h1,h2,h3,h4,h5,h6 {
-  color: $red;
-  border-bottom: 1px dashed #eee;
-}
-header > h1,h2,h3,h4,h5,h6 {
-  color: white;
-  border:none;
-}
 form{
   height:3rem;
 }
+
 input{
   height: 3rem;
   font-size: 2.5rem;
