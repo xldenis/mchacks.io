@@ -11,7 +11,7 @@
   .hash p {
     margin: 1em 0 1em 0;
     display: inline;
-    color: #2aa198; }
+    color: #dc322f; }
   .hash p:before {
     content: "\"";
     color: #93a1a1; }

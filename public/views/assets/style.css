@@ -379,7 +379,7 @@ html * {
   .hash p {
     margin: 1em 0 1em 0;
     display: inline;
-    color: #2aa198; }
+    color: #dc322f; }
   .hash p:before {
     content: "\"";
     color: #93a1a1; }
@@ -424,7 +424,13 @@ body {
   .slide article {
     width: 70%;
     margin: auto;
-    margin-top: 50px; }
+    margin-top: 50px;
+    color: white; }
+    .slide article h1 {
+      text-align: center;
+      color: white; }
+    .slide article h6 {
+      color: white; }
 
 .col {
   width: 50%;
