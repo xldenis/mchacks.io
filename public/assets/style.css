@@ -371,9 +371,8 @@ html * {
 
 .hash {
   font-family: Menlo,Courier New;
-  font-size: 16px;
   color: #93a1a1;
-  width: 800px;
+  width: 80%;
   margin: auto;
   font-size: 2rem; }
   .hash p {
@@ -471,3 +470,7 @@ input[type="button"]:hover {
   border: 1px solid white;
   background: #dc322f;
   color: white; }
+
+@media (max-width: 768px) {
+  .col {
+    width: 100%; } }

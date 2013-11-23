@@ -83,5 +83,9 @@ input[type="button"]{
     background:$red;
     color:white;
   }
-
+@media (max-width: 768px) {
+  .col {
+    width: 100%;
+  }
+}
 
