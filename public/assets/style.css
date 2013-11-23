@@ -425,11 +425,12 @@ body {
     width: 70%;
     margin: auto;
     margin-top: 50px;
-    color: white; }
+    color: white;
+    font-weight: 100; }
     .slide article h1 {
       text-align: center;
       color: white; }
-    .slide article h6 {
+    .slide article h5, .slide article h6 {
       color: white; }
 
 .col {
@@ -449,11 +450,11 @@ footer {
 
 input {
   height: 3rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding: 0;
   margin: 0;
   color: #dc322f;
-  padding: 0 10px 0 10px; }
+  padding: 5px 10px 5px 10px; }
 
 input[type="text"] {
   border: 1px solid #dc322f;
