@@ -378,7 +378,7 @@ html * {
   font-size: 2rem; }
   .hash p {
     margin: 1em 0 1em 0;
-    display: inline-block;
+    display: inline;
     color: #2aa198; }
   .hash p:before {
     content: "\"";
@@ -390,7 +390,8 @@ html * {
     content: "\"";
     color: #93a1a1; }
   .hash p.key {
-    display: inline-block; }
+    display: inline-block;
+    margin: 0.5em 0 0.5em 0; }
   .hash p.key:after {
     content: "\" :";
     color: #93a1a1; }
@@ -416,18 +417,29 @@ body {
   color: black; }
 
 .slide {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   overflow: auto;
-  background: #dc322f;
-  color: white; }
+  background: #dc322f; }
   .slide article {
     width: 70%;
     margin: auto;
     margin-top: 50px; }
 
+.col {
+  width: 50%;
+  float: left;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box; }
+
 form {
   height: 3rem; }
+
+footer {
+  width: 100%;
+  float: left;
+  text-align: center;
+  vertical-align: middle; }
 
 input {
   height: 3rem;
@@ -448,6 +460,6 @@ input[type="button"] {
   font-weight: 700; }
 
 input[type="button"]:hover {
-  border: 1px solid #dc322f;
+  border: 1px solid white;
   background: #dc322f;
   color: white; }

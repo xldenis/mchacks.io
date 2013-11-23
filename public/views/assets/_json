@@ -10,7 +10,7 @@
   font-size: 2rem; }
   .hash p {
     margin: 1em 0 1em 0;
-    display: inline-block;
+    display: inline;
     color: #2aa198; }
   .hash p:before {
     content: "\"";
@@ -22,7 +22,8 @@
     content: "\"";
     color: #93a1a1; }
   .hash p.key {
-    display: inline-block; }
+    display: inline-block;
+    margin: 0.5em 0 0.5em 0; }
   .hash p.key:after {
     content: "\" :";
     color: #93a1a1; }

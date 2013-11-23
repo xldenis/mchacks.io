@@ -12,9 +12,8 @@
 
   p {
     margin: 1em 0 1em 0;
-    display: inline-block;
+    display: inline;
     color: #2aa198;
-
   }
   p:before {
     content: "\"";
@@ -31,6 +30,7 @@
   }
   p.key{
     display: inline-block;
+    margin: 0.5em 0 0.5em 0;
   }
   p.key:after {
     content: "\" :";
