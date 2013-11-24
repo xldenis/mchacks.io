@@ -28,12 +28,12 @@
     color: #93a1a1; }
   .hash p + p {
     text-indent: 0; }
-  .hash span.pair {
+  .hash .pair {
     display: block;
     text-indent: 1em; }
-  .hash span.pair:after {
+  .hash .pair:after {
     content: ","; }
-  .hash span.pair:last-child:after {
+  .hash .pair:last-child:after {
     content: ""; }
 
 .hash:after {

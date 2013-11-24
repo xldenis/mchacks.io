@@ -396,12 +396,12 @@ html * {
     color: #93a1a1; }
   .hash p + p {
     text-indent: 0; }
-  .hash span.pair {
+  .hash .pair {
     display: block;
     text-indent: 1em; }
-  .hash span.pair:after {
+  .hash .pair:after {
     content: ","; }
-  .hash span.pair:last-child:after {
+  .hash .pair:last-child:after {
     content: ""; }
 
 .hash:after {
@@ -415,6 +415,9 @@ body {
   background: white;
   color: black; }
 
+.slide.dark {
+  background: #002b36; }
+
 .slide {
   min-height: 100%;
   width: 100%;
@@ -426,10 +429,8 @@ body {
     margin-top: 50px;
     color: white;
     font-weight: 100; }
-    .slide article h1 {
-      text-align: center;
-      color: white; }
-    .slide article h5, .slide article h6 {
+    .slide article h1, .slide article h5, .slide article h6 {
+      font-family: 'Source Sans Pro', 'Arimo','Lato';
       color: white; }
 
 .col {

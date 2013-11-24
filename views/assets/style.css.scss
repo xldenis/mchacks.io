@@ -13,6 +13,10 @@ body{
 background: white;
 color: black;
 }
+.slide.dark {
+  background: $base03;
+  // @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
+}
 .slide
 {
 //  @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
@@ -20,7 +24,6 @@ min-height: 100%;
 width: 100%;
 
 overflow:auto;
-
 background: $red;
 
 article {
@@ -28,11 +31,8 @@ article {
   margin: auto;
   margin-top: 50px;
 
-  h1 {
-    text-align: center;
-    color: white;
-  }
-  h5,h6 {
+  h1,h5,h6 {
+    font-family: 'Source Sans Pro', 'Arimo','Lato';
     color: white;
   }
   color: white;

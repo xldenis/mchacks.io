@@ -40,14 +40,14 @@
     text-indent: 0;
   }
 
-  span.pair {
+  .pair {
     display:block;
     text-indent: 1em;
   }
-  span.pair:after{
+  .pair:after{
     content: ",";
   }
-  span.pair:last-child:after {
+  .pair:last-child:after {
     content: "";
   }
 
