@@ -5,9 +5,9 @@
   font-family: Menlo,Courier New;
   padding-top: 50px;
   color: #93a1a1;
-  width: 80%;
+  width: 70%;
   margin: auto;
-  font-size: 2rem; }
+  font-size: 1.5rem; }
   .hash p {
     margin: 1em 0 1em 0;
     display: inline;
@@ -39,3 +39,13 @@
 
 .hash:after {
   content: "}"; }
+
+@media (max-width: 640px) {
+  .hash {
+    font-size: inherit;
+    width: 90%; }
+    .hash .pair {
+      text-indent: 0em; } }
+@media (min-width: 1200px) {
+  .hash {
+    font-size: 2em; } }

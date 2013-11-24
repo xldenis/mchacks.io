@@ -9,8 +9,7 @@ body{
 }
 
 .slide:nth-child(odd){
-//  @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03);
-background: white;
+  background: white;
   article {
     color: $red;
     h1,h5,h6 {
@@ -21,14 +20,11 @@ color: black;
 }
 .slide.dark {
   background: $base03;
-  // @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
 }
 .slide
 {
-//  @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
 min-height: 100%;
 width: 100%;
-
 overflow:auto;
 background: $red;
 
@@ -80,18 +76,30 @@ input[type="button"]{
   border:1px solid $red;
   color:$red;
   background:white;
-
   font-weight: 700;
-//  border-radius: 10px;
 }
   input[type="button"]:hover{
     border:1px solid white;
     background:$red;
     color:white;
   }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .col {
     width: 100%;
+  }
+  input[type="button"] {
+    width: 100%;
+  }
+}
+@media (max-width: 640px) {
+  .slide article {
+    width: 100%;
+  }
+  h1.giga {
+    font-size: 2em;
+  }
+  input[type="button"] {
+    width: 90%;
   }
 }
 
