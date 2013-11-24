@@ -11,6 +11,12 @@ body{
 .slide:nth-child(odd){
 //  @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03);
 background: white;
+  article {
+    color: $red;
+    h1,h5,h6 {
+      color: $red;
+    }
+  }
 color: black;
 }
 .slide.dark {

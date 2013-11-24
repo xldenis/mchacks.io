@@ -27,9 +27,9 @@ $green:     #859900;
     h1,h2,h3,h4,h5,h6 {color:$accent}
 }
 /* light is default mode, so pair with general html definition */
-.light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
-.dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
-html * {
-    color-profile: sRGB;
-    rendering-intent: auto;
-}
+// .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
+// .dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
+// html * {
+//     color-profile: sRGB;
+//     rendering-intent: auto;
+// }

@@ -3,6 +3,7 @@
 
 .hash {
   font-family: Menlo,Courier New;
+  padding-top: 50px;
   color: #93a1a1;
   width: 80%;
   margin: auto;
