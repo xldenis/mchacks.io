@@ -393,11 +393,12 @@ table {
     font-size: 2em; } }
 body {
   width: 100%;
-  margin: 0; }
+  margin: 0;
+  font-weight: 100; }
 
 .slide:nth-child(odd) {
   background: white;
-  color: black; }
+  color: #444; }
   .slide:nth-child(odd) article {
     color: #dc322f; }
     .slide:nth-child(odd) article h1, .slide:nth-child(odd) article h5, .slide:nth-child(odd) article h6 {
@@ -410,7 +411,8 @@ body {
   min-height: 100%;
   width: 100%;
   overflow: auto;
-  background: #dc322f; }
+  background: #dc322f;
+  position: relative; }
   .slide article {
     width: 70%;
     margin: auto;
@@ -420,6 +422,9 @@ body {
     .slide article h1, .slide article h5, .slide article h6 {
       font-family: 'Source Sans Pro', 'Arimo','Lato';
       color: white; }
+  .slide > footer {
+    position: absolute;
+    bottom: 0; }
 
 .col {
   width: 50%;
@@ -454,11 +459,10 @@ input[type="button"] {
   color: #dc322f;
   background: white;
   font-weight: 700; }
-
-input[type="button"]:hover {
-  border: 1px solid white;
-  background: #dc322f;
-  color: white; }
+  input[type="button"]:hover {
+    border: 1px solid white;
+    background: #dc322f;
+    color: white; }
 
 @media (max-width: 1024px) {
   .col {
@@ -476,3 +480,11 @@ input[type="button"]:hover {
 
   input[type="button"] {
     width: 90%; } }
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400; }
+  a:hover {
+    border-bottom: 1px dashed; }
+  a:visited {
+    color: #dc322f; }

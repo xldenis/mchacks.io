@@ -6,6 +6,7 @@
 body{
   width:100%;
   margin:0;
+  font-weight: 100;
 }
 
 .slide:nth-child(odd){
@@ -16,17 +17,17 @@ body{
       color: $red;
     }
   }
-color: black;
+color: #444;
 }
 .slide.dark {
   background: $base03;
 }
-.slide
-{
+.slide {
 min-height: 100%;
 width: 100%;
 overflow:auto;
 background: $red;
+position: relative;
 
 article {
   width: 70%;
@@ -39,6 +40,10 @@ article {
   }
   color: white;
   font-weight: 100;
+}
+&> footer {
+  position:absolute;
+  bottom: 0;
 }
 }
 .col {
@@ -77,12 +82,13 @@ input[type="button"]{
   color:$red;
   background:white;
   font-weight: 700;
-}
-  input[type="button"]:hover{
+
+  &:hover{
     border:1px solid white;
     background:$red;
     color:white;
   }
+}
 @media (max-width: 1024px) {
   .col {
     width: 100%;
@@ -101,6 +107,17 @@ input[type="button"]{
   }
   input[type="button"] {
     width: 90%;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 400;
+  &:hover {
+     border-bottom: 1px dashed;
+  }
+  &:visited {
+    color: $red;
   }
 }
 
