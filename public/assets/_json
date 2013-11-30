@@ -10,7 +10,7 @@
   font-size: 1.5rem; }
   .hash p {
     display: inline;
-    color: #2aa198; }
+    color: #2aa198 !important; }
   .hash p:before {
     content: "\"";
     color: #93a1a1; }
