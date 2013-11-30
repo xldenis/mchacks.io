@@ -9,9 +9,8 @@
   margin: auto;
   font-size: 1.5rem; }
   .hash p {
-    margin: 1em 0 1em 0;
     display: inline;
-    color: #dc322f; }
+    color: #2aa198; }
   .hash p:before {
     content: "\"";
     color: #93a1a1; }
@@ -23,7 +22,7 @@
     color: #93a1a1; }
   .hash p.key {
     display: inline-block;
-    margin: 0.5em 0 0.5em 0; }
+    margin: 0.25em 0; }
   .hash p.key:after {
     content: "\" :";
     color: #93a1a1; }
@@ -31,7 +30,7 @@
     text-indent: 0; }
   .hash .pair {
     display: block;
-    text-indent: 1em; }
+    text-indent: 0.5em; }
   .hash .pair:after {
     content: ","; }
   .hash .pair:last-child:after {

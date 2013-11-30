@@ -351,9 +351,8 @@ table {
   margin: auto;
   font-size: 1.5rem; }
   .hash p {
-    margin: 1em 0 1em 0;
     display: inline;
-    color: #dc322f; }
+    color: #2aa198; }
   .hash p:before {
     content: "\"";
     color: #93a1a1; }
@@ -365,7 +364,7 @@ table {
     color: #93a1a1; }
   .hash p.key {
     display: inline-block;
-    margin: 0.5em 0 0.5em 0; }
+    margin: 0.25em 0; }
   .hash p.key:after {
     content: "\" :";
     color: #93a1a1; }
@@ -373,7 +372,7 @@ table {
     text-indent: 0; }
   .hash .pair {
     display: block;
-    text-indent: 1em; }
+    text-indent: 0.5em; }
   .hash .pair:after {
     content: ","; }
   .hash .pair:last-child:after {
@@ -391,13 +390,20 @@ table {
 @media (min-width: 1200px) {
   .hash {
     font-size: 2em; } }
+.command {
+  font-size: 1.5rem;
+  width: 70%;
+  margin: auto;
+  color: #93a1a1;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; }
+
 body {
   width: 100%;
   margin: 0;
   font-weight: 100; }
 
 .slide:nth-child(odd) {
-  background: white;
+  background: #eeeeee;
   color: #444; }
   .slide:nth-child(odd) article {
     color: #dc322f; }
@@ -417,11 +423,11 @@ body {
     width: 70%;
     margin: auto;
     margin-top: 50px;
-    color: white;
+    color: #eeeeee;
     font-weight: 100; }
     .slide article h1, .slide article h5, .slide article h6 {
       font-family: 'Source Sans Pro', 'Arimo','Lato';
-      color: white; }
+      color: #eeeeee; }
   .slide > footer {
     position: absolute;
     bottom: 0; }
@@ -457,12 +463,12 @@ input[type="text"] {
 input[type="button"] {
   border: 1px solid #dc322f;
   color: #dc322f;
-  background: white;
+  background: #eeeeee;
   font-weight: 700; }
   input[type="button"]:hover {
-    border: 1px solid white;
+    border: 1px solid #eeeeee;
     background: #dc322f;
-    color: white; }
+    color: #eeeeee; }
 
 @media (max-width: 1024px) {
   .col {
@@ -488,3 +494,23 @@ a {
     border-bottom: 1px dashed; }
   a:visited {
     color: #dc322f; }
+
+.buttons {
+  margin: 2rem auto;
+  width: 30rem;
+  font-size: 2rem; }
+  .buttons a {
+    display: inline-block;
+    width: 12rem;
+    color: #dc322f;
+    text-align: center;
+    background: #eeeeee;
+    border-radius: 5px;
+    box-shadow: 0 2px #586e75;
+    font-weight: 700;
+    margin: 0 .25em;
+    padding: .25rem .5rem; }
+    .buttons a:hover {
+      background: #dc322f;
+      color: #eeeeee;
+      border: none; }
