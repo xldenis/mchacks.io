@@ -340,6 +340,14 @@ table {
   border-spacing: 0; }
 
 /* light is default mode, so pair with general html definition */
+.command {
+  font-size: 1.5rem;
+  width: 70%;
+  margin: auto;
+  padding-top: 50px;
+  color: #93a1a1;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; }
+
 .hash:before {
   content: "{"; }
 
@@ -382,21 +390,14 @@ table {
   content: "}"; }
 
 @media (max-width: 640px) {
-  .hash {
+  .hash, .command {
     font-size: inherit;
     width: 90%; }
-    .hash .pair {
+    .hash .pair, .command .pair {
       text-indent: 0em; } }
 @media (min-width: 1200px) {
-  .hash {
+  .hash, .command {
     font-size: 2em; } }
-.command {
-  font-size: 1.5rem;
-  width: 70%;
-  margin: auto;
-  color: #93a1a1;
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif; }
-
 body {
   width: 100%;
   margin: 0;

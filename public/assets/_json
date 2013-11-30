@@ -40,11 +40,11 @@
   content: "}"; }
 
 @media (max-width: 640px) {
-  .hash {
+  .hash, .command {
     font-size: inherit;
     width: 90%; }
-    .hash .pair {
+    .hash .pair, .command .pair {
       text-indent: 0em; } }
 @media (min-width: 1200px) {
-  .hash {
+  .hash, .command {
     font-size: 2em; } }
