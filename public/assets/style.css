@@ -505,6 +505,14 @@ a {
   a:visited {
     color: #dc322f; }
 
+.logo {
+  padding-top: 50px;
+  max-width: 70%;
+  margin: auto; }
+
+img {
+  max-width: 100%; }
+
 .buttons {
   margin: 2rem auto;
   width: 30rem;
