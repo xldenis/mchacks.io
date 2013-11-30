@@ -440,6 +440,7 @@ body {
     .slide article h1, .slide article h5, .slide article h6 {
       font-family: 'Source Sans Pro', 'Arimo','Lato'; }
   .slide > footer {
+    position: absolute;
     bottom: 0; }
 
 .col {

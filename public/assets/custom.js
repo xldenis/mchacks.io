@@ -45,5 +45,5 @@ window.onload = function () {
 el = document.getElementsByClassName("command")[0];
 el2 = document.getElementsByClassName("hash")[0];
 
-request(el,el2,75,500);
+request(el,el2,100,500);
 }
