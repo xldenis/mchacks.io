@@ -3,10 +3,11 @@
 function type(elem,text,delay,callback) {
   
   function next(i) {
-    elem.innerHTML = text.substr(0,i);
+    elem.innerHTML = text.substr(0,i)+"▊";
     if(text.length >= i){
       setTimeout(function() {next(i+1)} ,delay);
     }else {
+      elem.innerHTML = text.substr(0,i);
       if(callback != null) {
         callback();
       }
@@ -44,5 +45,5 @@ window.onload = function () {
 el = document.getElementsByClassName("command")[0];
 el2 = document.getElementsByClassName("hash")[0];
 
-request(el,el2,50,200);
+request(el,el2,75,500);
 }
