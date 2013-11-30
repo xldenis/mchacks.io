@@ -47,4 +47,4 @@
       text-indent: 0em; } }
 @media (min-width: 1200px) {
   .hash, .command {
-    font-size: 2em; } }
+    font-size: 2rem; } }
